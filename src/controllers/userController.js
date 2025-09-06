@@ -109,7 +109,7 @@ export const loginUser = async (req, res) => {
     const cookieOptions = {
       httpOnly: true,
       secure: true, // false for localhost
-      sameSite: "lax",
+      sameSite: "none",
       maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     };
 
